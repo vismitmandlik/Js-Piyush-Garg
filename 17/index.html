@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>You are watching at 1080p</h1>
+    <!-- <button onclick="bulaRahaHai(GeolocationPosition)">Full Screen</button>
+
+
+    <script>
+        function bulaRahaHai(GeolocationPosition) {
+            alert("Someone in  5km away is calling you !! ");
+            console.log(GeolocationCoordinates);
+        }
+    </script> -->
+    <div id="myContainer">
+
+    </div>
+    <button id="fullScreen"> Full Screen </button>
+
+    <script>
+        const buttonFullScreen = document.getElementById("fullScreen");   
+        const container = document.getElementById("myContainer");
+
+        buttonFullScreen.addEventListener('hover', () => {
+            const el = document.createElement('h1');
+            el.innerText = "Vismit Mandlik";
+            container.appendChild(el);
+        })
+        
+
+        // buttonFullScreen.addEventListener("click", () => {
+        //     console.log("Hacker hai bhai hacker");
+        // })
+        buttonFullScreen.addEventListener("click", () => {
+            console.log("Hacker hai bhai hacker");
+        })
+    </script>
+</body>
+</html>
